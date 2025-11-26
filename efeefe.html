@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новости — Дворец Спорта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #255792;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .news-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .news-content {
+            padding: 15px;
+        }
+        .news-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #34495e;
+        }
+        .news-description {
+            font-size: 0.95em;
+            color: #555;
+        }
+        @media(max-width: 990px){
+            .news-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Новости </h1>
+    <p>НОВОСТИ</p>
+</header>
+
+<div class="news-container">
+    <div class="news-card">
+        <img src="images/news1.jpg" alt="">
+        <div class="news-content">
+            <div class="news-title">НОВОСТИ</div>
+            <div class="news-description">
+                НОВОСТИ
+            </div>
+        </div>
+    </div>
+    <div class="news-card">
+        <img src="images/news2.jpg" alt="">
+        <div class="news-content">
+            <div class="news-title">НОВОСТИ</div>
+            <div class="news-description">
+        НОВОСТИ
+            </div>
+        </div>
+    </div>
+    <div class="news-card">
+        <img src="images/news3.jpg" alt="">
+        <div class="news-content">
+            <div class="news-title">НОВОСТИ</div>
+            <div class="news-description">
+                НОВОСТИ
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
